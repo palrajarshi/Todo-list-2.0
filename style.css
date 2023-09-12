@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(images/tiago-alexandre-lopes-iwzW4F_AdIo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.todo-container {
+  /* border: 2px solid; */
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.inputBox {
+  /* border: 2px solid aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 45%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.btnbox {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+.btn {
+  font-size: 3rem;
+  color: #e8202085;
+  border-radius: 30%;
+  background: none;
+  width: 6%;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+.btn:hover {
+  color: #e82020fc;
+}
+.btn:active {
+  color: rgba(72, 0, 255, 0.625);
+}
+.title {
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+#taskTitle {
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  margin: 0.5rem 0rem 1rem 0rem;
+  border: none;
+  box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+#taskContent {
+  box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  height: 12rem;
+  margin-top: 0.5rem;
+  border: none;
+  resize: none;
+}
+.taskBox {
+  /* border: 2px solid; */
+  width: 90%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+table tr:hover {
+  background-color: #ddd;
+}
+.btn-table {
+  font-size: 1.5rem;
+  color: #e8202085;
+  cursor: pointer;
+}
+.btn-table:hover {
+  color: #e82020fc;
+}
+.btn-table:active {
+  color: rgba(72, 0, 255, 0.625);
+}
+.btn-table:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.edit-pop {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 40%;
+  width: 37%;
+  position: absolute;
+  top: 31%;
+  left: 33%;
+  background-color: #46bcb2fc;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.edit-items {
+  margin: 1rem 1rem auto auto;
+  height: 2.5rem;
+  width: 95%;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#e-Content {
+  resize: none;
+  height: 37%;
+}
+.btn-cancel {
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  font-size: 2rem;
+  color: #5e5c5cfc;
+  cursor: pointer;
+}
+.btn-item {
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 0.6rem;
+  border: none;
+  padding: 0.2rem;
+  margin-left: 0.6rem;
+  width: 15%;
+  color: white;
+}
+.btn-item:nth-child(1) {
+  background: #0088ff;
+}
+.btn-item:nth-child(2) {
+  background: red;
+}
+
+.btnpop-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin: auto;
+}
+
+.edit-label{
+  font-weight: bold;
+}
